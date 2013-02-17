@@ -1,0 +1,19 @@
+// Imports -------------------------------------------------------------------
+@import "compass/css3";
+
+@import "partials/global";
+@import "partials/shell";
+@import "partials/photo-list";
+@import "partials/find-photos";
+
+#main {
+  height: 500px;
+  border-top: 7px solid  #1A1496;
+  padding: 1em;
+}
+
+.home {
+  font-size: 3em;
+  margin: 1em auto;
+  width: 5em;
+}

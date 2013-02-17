@@ -1,0 +1,48 @@
+@import "compass/reset";
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, "sans-serif";    
+    background-color: #f6e6b4; // Old browsers
+    @include filter-gradient(#f6e6b4, #ea9731, vertical); // IE6-9
+    @include background-image(linear-gradient(top, #f6e6b4 0%,#ea9731 100%));
+    color: #333333;
+    font-size: 1em;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***Extends****/
+%button {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: .9em;
+    @include border-radius(.3em);
+    border: solid 0;
+    padding: .7em 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+%light-blue-button {
+    background-color: #276791; // Old browsers
+    @include filter-gradient(#276791, #15405c, vertical); // IE6-9
+    @include background-image(linear-gradient(top, #427eae 0%,#669dd5 20%, #427eae 80%,#276791 100%));
+    @include box-shadow(0 0 0 2px rgba(14, 62, 93, 0.4));
+  
+    &:hover {
+        @include filter-gradient(#18577d, #276791, vertical); // IE6-9
+        @include background-image(linear-gradient(top, #4c87b9 0%,#7eb1e4 20%, #4c87b9 80%,#427eae 100%));
+    }
+}

@@ -1,0 +1,28 @@
+.shell {
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
+  background-color: #FFFFFF;
+  
+  nav {
+    padding: 1em;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: .5em;
+    background-color: #FFF3D1;   
+    border: 2px solid  #1A1496;
+    @include border-radius(5px);   
+  }
+  
+  nav li a {
+    color: #1A1496;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  nav li:hover {
+    background-color: #F0B343;
+  }
+}

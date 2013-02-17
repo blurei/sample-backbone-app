@@ -1,4 +1,4 @@
 var connect = require('connect');
 connect.createServer(
-    connect.static(__dirname)
+    connect.static(__dirname + '/public')
 ).listen(8001)

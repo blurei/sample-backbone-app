@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+
+	<title>Sample backbone application</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="/js/thirdparty/html5shiv/3.6/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div class="shell">
+		<nav>
+			<ul>
+			<li><a href="#bunnies">Bunnies</a></li>
+			<li><a href="#puppies">Puppies</a></li>
+			<li><a href="#kittens">Kittens</a></li>
+			<li><a href="#find">Find your own</a></li>
+			</ul>
+		</nav>
+		<section id="main" >
+			<noscript>
+				You need javascript enabled to view this site. Please check your browser settings.
+			</noscript>
+			
+		</section>
+	</div>
+</body>
+
+<script type="text/javascript">
+	window.jsErrors = [];
+	window.onerror = function(errorMessage) {
+		window.jsErrors.push(errorMessage);
+	}; 
+</script>
+<script type="text/javascript" data-main="/js/main.js" src="/js/thirdparty/require/2.1.4/require.min.js"></script>
+</html>
