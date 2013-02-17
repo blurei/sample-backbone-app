@@ -29,7 +29,7 @@ define(function(require) {
 		},
 		
 		//tags may be comma delimited
-		byTag: function(tags) {
+		byTags: function(tags) {
 			return DOMAIN + PUBLIC_FEED_URI + "tags=" + tags + FORMAT_SUFFIX;
 		}
 	
