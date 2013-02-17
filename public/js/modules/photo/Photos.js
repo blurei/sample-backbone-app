@@ -11,8 +11,7 @@ define(function(require) {
         parse: function(data) {
             if (data) {
                 return data.items;    
-            }
-            
+            }            
             return null;
         }
     });

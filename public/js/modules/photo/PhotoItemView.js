@@ -5,7 +5,7 @@ define(function(require) {
     var photoItemTemplate = require("text!templates/photo/photo-item.html");
 
     var PhotoListView = BaseView.extend({    	
-    	tagName : "li",    	
+    	tagName: "li",    	
         template: photoItemTemplate
     });
 

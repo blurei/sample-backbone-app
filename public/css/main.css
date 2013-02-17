@@ -170,9 +170,20 @@ form#find-photos input[type=submit]:hover {
   background-color: #F0B343;
 }
 
-/* line 1, ../sass/partials/_photo-list.scss */
-.photo-list {
-  overflow: scroll;
+/* line 4, ../sass/partials/_photo-list.scss */
+.photo-list span.spinny {
+  display: block;
+  margin: auto;
+  width: 90px;
+}
+/* line 10, ../sass/partials/_photo-list.scss */
+.photo-list span.spinny:after {
+  background: url("../images/spinner-blue.gif") no-repeat;
+  content: ".";
+  text-indent: -9999em;
+  height: 40px;
+  width: 40px;
+  display: block;
 }
 
 /* line 1, ../sass/partials/_find-photos.scss */

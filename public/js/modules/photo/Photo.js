@@ -3,8 +3,7 @@ define(function(require) {
   
     var Backbone = require("Backbone");
     
-    var Photo = Backbone.Model.extend({     
-    });
+    var Photo = Backbone.Model.extend({});
     
     return Photo;
 });

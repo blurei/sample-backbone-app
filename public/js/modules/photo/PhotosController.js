@@ -11,17 +11,15 @@ define(function(require) {
 		fetchPhotos: function(url) {
 			photos = new Photos();
 			photos.url = url;
-			return photos.fetch();
-			
+			return photos.fetch();			
 		},
 		
-		handleUsing : function(url) {
+		handleUsing: function(url) {
 			return this.fetchPhotos(url).pipe(
 				function() {
 					return new PhotoListView({model: photos});
 				}
 			);
-
 		}
 	}
 	return PhotosController;

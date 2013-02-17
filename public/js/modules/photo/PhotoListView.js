@@ -7,17 +7,15 @@ define(function(require) {
 	
 	var PhotoListView = BaseView.extend({
 		
-		template : photoListTemplate,
+		template: photoListTemplate,
 
-		afterRender : function() {
+		afterRender: function() {
 			var $photoList = this.$el.find(".photo-list").html("");
 
 			_.each(this.model.models, function(photo) {
-
 				$photoList.append(new PhotoItemView({
 					model : photo
 				}).render().el);
-
 			});
 		}
 	});
