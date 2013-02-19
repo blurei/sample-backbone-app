@@ -1,7 +1,7 @@
 sample-backbone-app
 ===================
 
-small backbone application that pulls pictures from flickr
+small backbone application that pulls cute pictures from flickr
 
 To startup: 
 
