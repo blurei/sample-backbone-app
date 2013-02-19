@@ -6,6 +6,7 @@
   
   nav {
     padding: 1em;
+    position: relative;
   }
 
   nav li {
@@ -24,5 +25,16 @@
   
   nav li:hover {
     background-color: #F0B343;
+  }
+
+  .spinny {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    height: 40px;
+    width: 40px;
+    background: url("../images/spinner-blue.gif") no-repeat;
+    display: none;
   }
 }

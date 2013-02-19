@@ -11,7 +11,7 @@ define(function(require) {
 		initialize : function() {
 
 			MainContentRenderer.init();
-
+			
 			Backbone.history.start({});
 
 		}

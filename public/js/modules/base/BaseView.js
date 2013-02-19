@@ -3,10 +3,10 @@ define(function (require) {
 
     var _ = require("Underscore");
     var Backbone = require("Backbone");
-    var CloseableView = require("modules/site/traits/CloseableView");
-    var RenderableView = require("modules/site/traits/RenderableView");
+    var WithCloseableView = require("modules/site/traits/WithCloseableView");
+    var WithRenderableView = require("modules/site/traits/WithRenderableView");
     
-    var BaseView = Backbone.View.extend(_.extend({}, CloseableView, RenderableView, {
+    var BaseView = Backbone.View.extend(_.extend({}, WithCloseableView, WithRenderableView, {
         // any "only baseview" code goes here, hopefully there's none that cant wait for a trait
     }));
     

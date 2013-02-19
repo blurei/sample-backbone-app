@@ -5,7 +5,7 @@ define(function(require) {
         console.warn("You may not have unbound the event handlers for a view. Override onClose if you need to cleanup your view");
     };
 
-    var CloseableView = {
+    var WithCloseableView = {
 
         close: function() {
             console.log("closing view " + this.cid);
@@ -20,5 +20,5 @@ define(function(require) {
         onClose: warnThatViewMayNotBeClosed
     };
 
-    return CloseableView;
+    return WithCloseableView;
 });

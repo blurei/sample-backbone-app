@@ -1,18 +1,15 @@
 .photo-list {
- 
+  padding: 1em;
   
-  span.spinny {
+  img {
     display: block;
-    margin: auto;
-    width: 90px;
+    border: 5px #9BA3C2 solid;
   }
   
-  span.spinny:after {
-    background: url("../images/spinner-blue.gif") no-repeat;
-    content: ".";
-    text-indent: -9999em;
-    height: 40px;
-    width: 40px;
-    display: block;
+  li {  
+    margin: 10px;
+    float: left;   
   }
+
 }
+

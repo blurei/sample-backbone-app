@@ -15,7 +15,7 @@ define(function(require) {
         DESTINATION: DESTINATION,
         
         init: function() {         
-            EventBus.subscribe(UPDATE_EVENT, this.render.bind(this), MainContentRenderer);
+            EventBus.subscribe(UPDATE_EVENT, this.render, this);
         },
 
         render: function(view) {

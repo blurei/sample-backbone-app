@@ -56,16 +56,6 @@ define(function(require) {
                 return;
             }
 
-            /*
-             * The only time you should enter this if clause is if you call Templates.render with a model
-             * and the model is falsy, i.e.:
-             * Templates.render({
-             *     model: undefined|null|false,
-             *     template: this.template,
-             *     container: this.el
-             * });    
-             *
-             */
             if ("model" in options && !model) {
                 throw new Error("There is no model to render with this template");
             }

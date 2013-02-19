@@ -2,10 +2,6 @@ define(function(require) {
     "use strict";
     
     var _ = require("Underscore");
-
-    var FIRE_ROUTE_EVENT = "Router:fire-route";
-    var FIRE_ROUTE_HANDLER_EVENT = "Router:fire-route-handler";
-    var LINK_CLICK_EVENT = "window:link-clicked";
     
     var events = {}; // Map of event to models bound to that event
 
@@ -55,34 +51,15 @@ define(function(require) {
         }
     }
     
-    function route(fragment, options) {
-        publish(FIRE_ROUTE_EVENT, fragment, _.extend({ trigger: true }, options));
-    }
-    
-    function fireRouteHandlerFor(fragment) {
-        var additionalArguments = [].slice.call(arguments, 1);
-        var publishArguments = [FIRE_ROUTE_HANDLER_EVENT, fragment];
-        
-        publish.apply(null, publishArguments.concat(additionalArguments));
-    }
-    
+     
     var EventBus = {
 
         subscribe: subscribe,
 
         publish: publish,
 
-        unsubscribe: unsubscribe,
-        
-        route: route,
-        
-        fireRouteHandlerFor: fireRouteHandlerFor,
-        
-        FIRE_ROUTE_EVENT: FIRE_ROUTE_EVENT,
-        
-        FIRE_ROUTE_HANDLER_EVENT: FIRE_ROUTE_HANDLER_EVENT,
-        
-        LINK_CLICK_EVENT: LINK_CLICK_EVENT
+        unsubscribe: unsubscribe
+       
     };
 
     return EventBus;

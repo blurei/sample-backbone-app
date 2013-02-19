@@ -146,8 +146,9 @@ form#find-photos input[type=submit]:hover {
 /* line 7, ../sass/partials/_shell.scss */
 .shell nav {
   padding: 1em;
+  position: relative;
 }
-/* line 11, ../sass/partials/_shell.scss */
+/* line 12, ../sass/partials/_shell.scss */
 .shell nav li {
   display: inline-block;
   padding: .5em;
@@ -159,31 +160,41 @@ form#find-photos input[type=submit]:hover {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 19, ../sass/partials/_shell.scss */
+/* line 20, ../sass/partials/_shell.scss */
 .shell nav li a {
   color: #1A1496;
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 25, ../sass/partials/_shell.scss */
+/* line 26, ../sass/partials/_shell.scss */
 .shell nav li:hover {
   background-color: #F0B343;
 }
-
-/* line 4, ../sass/partials/_photo-list.scss */
-.photo-list span.spinny {
-  display: block;
-  margin: auto;
-  width: 90px;
-}
-/* line 10, ../sass/partials/_photo-list.scss */
-.photo-list span.spinny:after {
-  background: url("../images/spinner-blue.gif") no-repeat;
-  content: ".";
-  text-indent: -9999em;
+/* line 30, ../sass/partials/_shell.scss */
+.shell .spinny {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
   height: 40px;
   width: 40px;
+  background: url("../images/spinner-blue.gif") no-repeat;
+  display: none;
+}
+
+/* line 1, ../sass/partials/_photo-list.scss */
+.photo-list {
+  padding: 1em;
+}
+/* line 4, ../sass/partials/_photo-list.scss */
+.photo-list img {
   display: block;
+  border: 5px #9ba3c2 solid;
+}
+/* line 9, ../sass/partials/_photo-list.scss */
+.photo-list li {
+  margin: 10px;
+  float: left;
 }
 
 /* line 1, ../sass/partials/_find-photos.scss */
@@ -220,14 +231,22 @@ form#find-photos input[type=text]:-moz-placeholder {
 
 /* line 9, ../sass/main.scss */
 #main {
-  height: 500px;
+  height: 600px;
   border-top: 7px solid #1a1496;
   padding: 1em;
+  overflow-y: scroll;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 .home {
+  text-align: center;
+}
+/* line 19, ../sass/main.scss */
+.home h1 {
   font-size: 3em;
-  margin: 1em auto;
-  width: 5em;
+  margin: 1em 0;
+}
+/* line 23, ../sass/main.scss */
+.home h2 {
+  font-size: 1.5em;
 }

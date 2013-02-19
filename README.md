@@ -9,3 +9,6 @@ To startup:
 2. Install connect "npm install connect"
 3. Run server.js "node server.js"
 4. Visit http://localhost:8001
+
+Run tests:
+1. Open "sample-backbone-app/public/test/index.html" in your webbrowser
