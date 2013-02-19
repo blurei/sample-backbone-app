@@ -2,7 +2,7 @@ define(function(require) {
     "use strict";
 
     var _ = require("Underscore");
-    var Templates = require("modules/templating/Templates");
+    var Templates = require("modules/util/Templates");
     
     var noop = function(){};
     

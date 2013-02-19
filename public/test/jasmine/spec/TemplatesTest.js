@@ -2,7 +2,7 @@ define(function(require) {
     "use strict";
     
     var Backbone = require("Backbone");
-    var Templates = require("modules/templating/Templates");
+    var Templates = require("modules/util/Templates");
     var Mustache = require("Mustache");
     require("jquery.jasmine");
     var forEach = require("forEach");

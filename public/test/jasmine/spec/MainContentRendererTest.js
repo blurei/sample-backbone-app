@@ -4,7 +4,6 @@ define(function(require) {"use strict";
 	require("jquery.jasmine");
 	var MainContentRenderer = require("modules/site/MainContentRenderer");
 	var BaseView = require("modules/base/BaseView");
-	var Templates = require("modules/templating/Templates");
 	var EventBus = require("EventBus");
 	var _ = require("Underscore");
 	var wait = require("wait");
